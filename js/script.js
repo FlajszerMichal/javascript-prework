@@ -18,6 +18,7 @@ if (randomNumber == '3') {
 }
 printMessage('Mój ruch: ' + computerMove);
 
+
 var playerInput, playerMove;
 playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('Wpisana odpowiedź to: ' + playerInput);
@@ -33,6 +34,11 @@ if (playerInput == '2') {
 }
 if (playerInput == '3') {
   playerMove = 'nożyce';
+} else {
+  playerMove = 'nieznany ruch';
+}
+if (playerInput > '3') {
+  printMessage('zły numer');
 } else {
   playerMove = 'nieznany ruch';
 }
